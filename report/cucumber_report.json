@@ -1,0 +1,289 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "media-api-testing;verify-response-status-and-time",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify response status and time",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the API url \"https://testapi.io/api/ottplatform\" is available",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1339299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request to \"/media\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 505521699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2424099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response time should be below 1000 milliseconds",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1395999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "media-api-testing;validate-id-and-segment_type-fields",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Validate id and segment_type fields",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the API url \"https://testapi.io/api/ottplatform\" is available",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 591000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request to \"/media\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 405271499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "each item should have a non-empty \"id\" field",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3333899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "each item's \"segment_type\" should be \"music\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1430299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "media-api-testing;validate-title_list.primary-field",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Validate title_list.primary field",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the API url \"https://testapi.io/api/ottplatform\" is available",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 857999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request to \"/media\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 389613399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "each item's \"title_list.primary\" should not be null or empty",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2673699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "media-api-testing;verify-now_playing-count",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify now_playing count",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the API url \"https://testapi.io/api/ottplatform\" is available",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 646600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request to \"/media\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 394107700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "exactly one item should have \"offset.now_playing\" set to true",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 630300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "media-api-testing;verify-date-header",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Verify Date header",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the API url \"https://testapi.io/api/ottplatform\" is available",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1116199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request to \"/media\"",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 393486800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the response should include a valid \"Date\" header",
+            "match": {
+              "location": "file:\\C:\\Users\\Bakkiyarajan\\Desktop\\BBC_Second_Round\\bbc-api-tests\\features\\step_definitions\\mediaSteps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5778999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "media-api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Media API Testing",
+    "tags": [],
+    "uri": "features\\media.feature"
+  }
+]
