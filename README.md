@@ -48,6 +48,13 @@ This is the Cucumber configuration file that defines what files to include, sets
 #### package.json
 Contains metadata about the project and lists all dependencies and test scripts. You can run the tests using commands defined here (npm run test:full).
 
+## Part2 Manual Test Cases
+
+You can find the documented manual test cases for the Media API here:
+
+- manual_testcases/Part 2 – Functional Manual Testing
+
+
 
 
 
